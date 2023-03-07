@@ -1,9 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Navbar = () => {
+  const [nav, setNav] = React.useState(false);
+
+  const handleNav = () => setNav(!nav);
+
   return (
     <div className='fixed w-full h-20 shadow-xl z-[100]'>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
@@ -39,17 +45,23 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div className='md:hidden'>
+          <div className='md:hidden cursor-pointer' onClick={handleNav}>
             <AiOutlineMenu size={25} />
           </div>
         </div>
       </div>
 
-      <div className='fixed left-0 top-0 w-full h-screen bg-black/70'>
+      <div
+        className={
+          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+        }
+      >
         <div
-          className='fixed left-0 top-0 w-[75%] 
-        sm:w-[60%] md:w-[45%] h-screen  bg-[#ecf0f3] 
-        p-10 ease-in duration-500'
+          className={
+            nav
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-[#ecf0f3] p-10 ease-in duration-500'
+              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+          }
         >
           <div>
             <div className='flex w-full items-center justify-between'>
@@ -59,7 +71,10 @@ const Navbar = () => {
                 width='75'
                 height='50'
               />
-              <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+              <div
+                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                onClick={handleNav}
+              >
                 <AiOutlineClose />
               </div>
             </div>
@@ -87,6 +102,40 @@ const Navbar = () => {
                 <li className='py-4 text-sm'>Contato</li>
               </Link>
             </ul>
+            <div className='pt-20'>
+              <p className='uppercase tracking-widest text-[#4e4ae3] font-semibold'>
+                Entre em contato
+              </p>
+              <div
+                className='flex items-center justify-between my-4
+              w-full sm:w-[80%]'
+              >
+                <div
+                  className='rounded-full shadow-lg shadow-gray-400 
+                p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                >
+                  <FaLinkedinIn />
+                </div>
+                <div
+                  className='rounded-full shadow-lg shadow-gray-400 
+                p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                >
+                  <AiOutlineMail />
+                </div>
+                <div
+                  className='rounded-full shadow-lg shadow-gray-400 
+                p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                >
+                  <FaGithub />
+                </div>
+                <div
+                  className='rounded-full shadow-lg shadow-gray-400 
+                p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                >
+                  <BsFillPersonLinesFill />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

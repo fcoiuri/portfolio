@@ -5,7 +5,12 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Main = () => {
   return (
-    <div className='w-full h-screen text-center'>
+    <div
+      className='w-full h-screen text-center'
+      data-aos='fade-up'
+      data-aos-duration='2000'
+      data-aos-mirror='true'
+    >
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
           <p className='uppercase text-sm tracking-widest text-gray-600 font-medium'>

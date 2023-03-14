@@ -4,7 +4,13 @@ import Link from 'next/link';
 
 const About = () => {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
+    <div
+      id='about'
+      data-aos='zoom-in'
+      data-aos-duration='2000'
+      data-aos-mirror='true'
+      className='w-full md:h-screen p-2 flex items-center py-16'
+    >
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-[#4e4ae3]'>

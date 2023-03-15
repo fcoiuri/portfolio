@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#edf1f4] text-[#1b2431] tracking-wide;
+    @apply bg-[#212121] text-[#EDEADE] tracking-wide;
   }
 
   h1,
@@ -13,7 +13,7 @@
   h4,
   h5,
   h6 {
-    @apply font-bold;
+    @apply font-bold text-[#F9F6EE];
   }
 
   h1 {
@@ -25,11 +25,15 @@
   }
 
   li {
-    @apply cursor-pointer;
+    @apply cursor-pointer hover:no-underline text-[#F9F6EE];
+  }
+
+  p {
+    @apply text-[#F9F6EE];
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl 
-    uppercase bg-gradient-to-r from-[#6662e7] to-[#7ea4ff] text-white;
+    @apply shadow-xl shadow-gray-300 rounded-xl 
+    uppercase bg-gradient-to-r from-[#d4af37] to-[#daa520] text-white;
   }
 }

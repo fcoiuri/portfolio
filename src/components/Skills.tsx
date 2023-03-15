@@ -11,10 +11,10 @@ const Skills = () => {
       data-aos-mirror='true'
     >
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-        <p className='uppercase text-xl tracking-widest text-[#4e4ae3]'>
+        <p className='uppercase text-xl tracking-widest text-[#d4af37]'>
           Habilidades
         </p>
-        <h2 className='py-2'>O que eu faço</h2>
+        <h2 className='py-2'>Tecnologias que domino</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           <SkillsDetails
             imgSrc='/../public/assets/skills/react.png'

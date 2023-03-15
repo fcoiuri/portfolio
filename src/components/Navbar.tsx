@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleNav = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-20 shadow-xl z-[100]'>
+    <div className='fixed w-full h-20 shadow-xl z-[100] bg-[#181818]'>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Image
           src='/../public/assets/navLogo.png'
@@ -20,29 +20,21 @@ const Navbar = () => {
           height='50'
         />
         <div>
-          <ul className='hidden md:flex'>
+          <ul className='hidden md:flex '>
             <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>
-                Página Inicial
-              </li>
+              <li className='ml-10 text-sm uppercase'>Página Inicial</li>
             </Link>
             <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>Sobre</li>
+              <li className='ml-10 text-sm uppercase'>Sobre</li>
             </Link>
             <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>
-                Habilidades
-              </li>
+              <li className='ml-10 text-sm uppercase'>Habilidades</li>
             </Link>
             <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>
-                Projetos
-              </li>
+              <li className='ml-10 text-sm uppercase'>Projetos</li>
             </Link>
             <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>
-                Contato
-              </li>
+              <li className='ml-10 text-sm uppercase'>Contato</li>
             </Link>
           </ul>
           <div className='md:hidden cursor-pointer' onClick={handleNav}>
@@ -59,7 +51,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-[#ecf0f3] p-10 ease-in duration-500'
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-[#282828] p-10 ease-in duration-500'
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
@@ -72,7 +64,7 @@ const Navbar = () => {
                 height='50'
               />
               <div
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                className='rounded-full shadow-md shadow-gray-300 p-3 cursor-pointer'
                 onClick={handleNav}
               >
                 <AiOutlineClose />
@@ -103,7 +95,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className='pt-20'>
-              <p className='uppercase tracking-widest text-[#4e4ae3] font-semibold'>
+              <p className='uppercase tracking-widest text-[#d4af37] font-semibold'>
                 Entre em contato
               </p>
               <div
@@ -111,28 +103,28 @@ const Navbar = () => {
               w-full sm:w-[80%]'
               >
                 <div
-                  className='rounded-full shadow-lg shadow-gray-400 
+                  className='rounded-full shadow-lg shadow-gray-500
                 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn size={'1.5em'} />
                 </div>
                 <div
-                  className='rounded-full shadow-lg shadow-gray-400 
+                  className='rounded-full shadow-lg shadow-gray-500
                 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
-                  <AiOutlineMail />
+                  <AiOutlineMail size={'1.5em'} />
                 </div>
                 <div
-                  className='rounded-full shadow-lg shadow-gray-400 
+                  className='rounded-full shadow-lg shadow-gray-500
                 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
-                  <FaGithub />
+                  <FaGithub size={'1.5em'} />
                 </div>
                 <div
-                  className='rounded-full shadow-lg shadow-gray-400 
+                  className='rounded-full shadow-lg shadow-gray-500
                 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
-                  <BsFillPersonLinesFill />
+                  <BsFillPersonLinesFill size={'1.5em'} />
                 </div>
               </div>
             </div>

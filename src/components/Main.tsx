@@ -13,42 +13,42 @@ const Main = () => {
     >
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
-          <p className='uppercase text-sm tracking-widest text-gray-600 font-medium'>
+          <p className='uppercase text-sm tracking-widest text-gray-300 font-medium'>
             Vamos construir algo juntos
           </p>
-          <h1 className='py-4 text-gray-700'>
+          <h1 className='py-4 text-[#F9F6EE]'>
             Olá, eu sou
-            <span className='text-[#4e4ae3]'>&nbsp;Iuri</span>
+            <span className='text-[#d4af37]'>&nbsp;Iuri Mendes</span>
           </h1>
-          <h1 className='py-1 text-gray-700'>Um desenvolvedor Front-End</h1>
-          <p className='py-4 text-gray-600 max-w-[70%] m-auto font-medium'>
+          <h1 className='py-1 '>Um desenvolvedor Front-End</h1>
+          <p className='py-4 text-gray-300 max-w-[70%] m-auto font-medium'>
             Estou focado e me especializando cada dia mais em construir
             aplicações web front-end responsivas.
           </p>
-          <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+          <div className='flex items-center justify-between max-w-[450px] m-auto py-4'>
             <div
-              className='rounded-full shadow-lg shadow-gray-400 
-                p-6 cursor-pointer hover:scale-110 ease-in duration-300'
+              className='rounded-full shadow-lg shadow-gray-500
+                p-6 cursor-pointer hover:scale-125 ease-in duration-300'
             >
-              <FaLinkedinIn />
+              <FaLinkedinIn size={'2em'} />
             </div>
             <div
-              className='rounded-full shadow-lg shadow-gray-400 
-                p-6 cursor-pointer hover:scale-110 ease-in duration-300'
+              className='rounded-full shadow-lg shadow-gray-500
+                p-6 cursor-pointer hover:scale-125 ease-in duration-300'
             >
-              <AiOutlineMail />
+              <AiOutlineMail size={'2em'} />
             </div>
             <div
-              className='rounded-full shadow-lg shadow-gray-400 
-                p-6 cursor-pointer hover:scale-110 ease-in duration-300'
+              className='rounded-full shadow-lg shadow-gray-500
+                p-6 cursor-pointer hover:scale-125 ease-in duration-300'
             >
-              <FaGithub />
+              <FaGithub size={'2em'} />
             </div>
             <div
-              className='rounded-full shadow-lg shadow-gray-400 
-                p-6 cursor-pointer hover:scale-110 ease-in duration-300'
+              className='rounded-full shadow-lg shadow-gray-500
+                p-6 cursor-pointer hover:scale-125 ease-in duration-300'
             >
-              <BsFillPersonLinesFill />
+              <BsFillPersonLinesFill size={'2em'} />
             </div>
           </div>
         </div>

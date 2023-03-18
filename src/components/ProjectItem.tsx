@@ -18,7 +18,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({
   return (
     <div
       className='relative flex items-center justify-center
-  h-auto w-full shadow-xl shadow-gray-300 rounded-xl p-4
+  h-auto w-full shadow-xl shadow-[#3f3f3f] rounded-xl p-4
   group hover:bg-gradient-to-r from-[#BF953F] via-[#B38728] to-[#FCF6BA]'
     >
       <Image

@@ -64,7 +64,7 @@ const Navbar = () => {
                 height='50'
               />
               <div
-                className='rounded-full shadow-md shadow-gray-300 p-3 cursor-pointer'
+                className='rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer'
                 onClick={handleNav}
               >
                 <AiOutlineClose />
@@ -103,25 +103,25 @@ const Navbar = () => {
               w-full sm:w-[80%]'
               >
                 <div
-                  className='rounded-full shadow-lg shadow-gray-500
+                  className='rounded-full shadow-lg shadow-[#494949]
                 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
                   <FaLinkedinIn size={'1.5em'} />
                 </div>
                 <div
-                  className='rounded-full shadow-lg shadow-gray-500
+                  className='rounded-full shadow-lg shadow-[#494949]
                 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
                   <AiOutlineMail size={'1.5em'} />
                 </div>
                 <div
-                  className='rounded-full shadow-lg shadow-gray-500
+                  className='rounded-full shadow-lg shadow-[#494949]
                 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
                   <FaGithub size={'1.5em'} />
                 </div>
                 <div
-                  className='rounded-full shadow-lg shadow-gray-500
+                  className='rounded-full shadow-lg shadow-[#494949]
                 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
                   <BsFillPersonLinesFill size={'1.5em'} />

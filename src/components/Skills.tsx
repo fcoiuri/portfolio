@@ -1,10 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
 import { SkillsDetails } from './SkillsDetails';
+import reactImg from '../../public/assets/skills/react.png';
+import typescriptImg from '../../public/assets/skills/typescript.png';
+import nextjsImg from '../../public/assets/skills/nextjs.png';
+import reduxImg from '../../public/assets/skills/redux.png';
+import javaScriptImg from '../../public/assets/skills/javaScript.png';
+import muiImg from '../../public/assets/skills/material-ui.png';
+import tailwindImg from '../../public/assets/skills/tailwind.png';
+import cssImg from '../../public/assets/skills/css.png';
 
 const Skills = () => {
   return (
     <div
+      id='skills'
       className='w-full lg:h-screen p-2'
       data-aos='zoom-in'
       data-aos-duration='2000'
@@ -16,35 +25,14 @@ const Skills = () => {
         </p>
         <h2 className='py-2'>Tecnologias que domino</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-          <SkillsDetails
-            imgSrc='/../public/assets/skills/react.png'
-            name='React'
-          />
-          <SkillsDetails
-            imgSrc='/../public/assets/skills/typescript.png'
-            name='TypeScript'
-          />
-          <SkillsDetails
-            imgSrc='/../public/assets/skills/nextjs.png'
-            name='Next.js'
-          />
-          <SkillsDetails
-            imgSrc='/../public/assets/skills/redux.png'
-            name='Redux'
-          />
-          <SkillsDetails
-            imgSrc='/../public/assets/skills/javaScript.png'
-            name='JavaScript'
-          />
-          <SkillsDetails
-            imgSrc='/../public/assets/skills/material-ui.png'
-            name='MUI'
-          />
-          <SkillsDetails
-            imgSrc='/../public/assets/skills/tailwind.png'
-            name='Tailwind CSS'
-          />
-          <SkillsDetails imgSrc='/../public/assets/skills/css.png' name='CSS' />
+          <SkillsDetails imgSrc={reactImg} name='React' />
+          <SkillsDetails imgSrc={typescriptImg} name='TypeScript' />
+          <SkillsDetails imgSrc={nextjsImg} name='Next.js' />
+          <SkillsDetails imgSrc={reduxImg} name='Redux' />
+          <SkillsDetails imgSrc={javaScriptImg} name='JavaScript' />
+          <SkillsDetails imgSrc={muiImg} name='MUI' />
+          <SkillsDetails imgSrc={tailwindImg} name='Tailwind CSS' />
+          <SkillsDetails imgSrc={cssImg} name='CSS' />
         </div>
       </div>
     </div>

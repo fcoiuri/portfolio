@@ -6,6 +6,7 @@ import pokemonImg from '../../public/assets/projects/pokemon.png';
 const Projects = () => {
   return (
     <div
+      id='projects'
       className='w-full'
       data-aos='zoom-in'
       data-aos-duration='2000'

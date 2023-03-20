@@ -1,11 +1,12 @@
 export {};
 
 declare global {
-  namespace NodeJS {
+  declare namespace NodeJS {
     interface ProcessEnv {
-      SERVICE_ID: string;
-      TEMPLATE_ID: string;
-      PUBLIC_KEY: string;
+      REACT_APP_SERVICE_ID: string;
+      REACT_APP_TEMPLATE_ID: string;
+      REACT_APP_PUBLIC_KEY: string;
+      REACT_APP_CAPTCHA_KEY: string;
     }
   }
 }

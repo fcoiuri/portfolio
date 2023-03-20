@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import meImg from '../../public/assets/me.jpg';
 
 const About = () => {
   return (
@@ -46,13 +47,7 @@ const About = () => {
           shadow-[#3f3f3f] rounded flex items-center justify-center
         p-4 hover:scale-110 ease-in duration-300'
         >
-          <Image
-            className='rounded-xl'
-            src='/../public/assets/me.jpg'
-            alt='Iuri Mendes'
-            width='350'
-            height='150'
-          />
+          <Image className='rounded-xl' src={meImg} alt='Iuri Mendes' />
         </div>
       </div>
     </div>

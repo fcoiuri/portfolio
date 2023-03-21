@@ -3,10 +3,10 @@ import Image from 'next/image';
 import emailjs from 'emailjs-com';
 import Link from 'next/link';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsFillTelephoneFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import meImg from '../../public/assets/me2.jpg';
+import meImg from '../../public/assets/me2.png';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
@@ -119,30 +119,46 @@ const Contact = () => {
               </div>
               <div>
                 <div className='flex items-center justify-between py-4'>
-                  <div
-                    className='rounded-full shadow-lg shadow-[#3f3f3f]
-                p-6 cursor-pointer hover:scale-125 ease-in duration-300'
+                  <a
+                    href='https://linkedin.com/in/fcoiuri/'
+                    target='_blank'
+                    rel='noreferrer'
                   >
-                    <FaLinkedinIn size={'2em'} />
-                  </div>
-                  <div
-                    className='rounded-full shadow-lg shadow-[#3f3f3f]
+                    <div
+                      className='rounded-full shadow-lg shadow-[#3f3f3f]
                 p-6 cursor-pointer hover:scale-125 ease-in duration-300'
+                    >
+                      <FaLinkedinIn size={'2em'} />
+                    </div>
+                  </a>
+                  <a href='mailto: fcoiuri@gmail.com'>
+                    <div
+                      className='rounded-full shadow-lg shadow-[#3f3f3f]
+                    p-6 cursor-pointer hover:scale-125 ease-in duration-300'
+                    >
+                      <AiOutlineMail size={'2em'} />
+                    </div>
+                  </a>
+                  <a
+                    href='https://github.com/fcoiuri'
+                    target='_blank'
+                    rel='noreferrer'
                   >
-                    <AiOutlineMail size={'2em'} />
-                  </div>
-                  <div
-                    className='rounded-full shadow-lg shadow-[#3f3f3f]
+                    <div
+                      className='rounded-full shadow-lg shadow-[#3f3f3f]
                 p-6 cursor-pointer hover:scale-125 ease-in duration-300'
-                  >
-                    <FaGithub size={'2em'} />
-                  </div>
-                  <div
-                    className='rounded-full shadow-lg shadow-[#3f3f3f]
+                    >
+                      <FaGithub size={'2em'} />
+                    </div>
+                  </a>
+                  <a href='tel:5585985299906'>
+                    <div
+                      className='rounded-full shadow-lg shadow-[#3f3f3f]
                 p-6 cursor-pointer hover:scale-125 ease-in duration-300'
-                  >
-                    <BsFillPersonLinesFill size={'2em'} />
-                  </div>
+                    >
+                      <BsFillTelephoneFill size={'2em'} />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

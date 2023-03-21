@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import meImg from '../../public/assets/me.jpg';
+import meImg from '../../public/assets/me.png';
 
 const About = () => {
   return (
@@ -38,14 +38,16 @@ const About = () => {
             Possuo experiência em React, Redux, TypeScript, Angular, HTML, CSS,
             Material-UI, Tailwind, consumo de API dentre outras coisas.
           </p>
-          <p className='py-2 text-gray-300 underline cursor-pointer'>
-            Confira meus projetos.
-          </p>
+          <Link href='/#projects'>
+            <p className='py-2 text-gray-300 underline cursor-pointer'>
+              Confira meus projetos.
+            </p>
+          </Link>
         </div>
         <div
           className='w-full h-auto m-auto shadow-xl
           shadow-[#3f3f3f] rounded flex items-center justify-center
-        p-4 hover:scale-110 ease-in duration-300'
+       hover:scale-110 ease-in duration-300'
         >
           <Image className='rounded-xl' src={meImg} alt='Iuri Mendes' />
         </div>

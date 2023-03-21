@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div
       id='projects'
-      className='w-full'
+      className='w-full md:h-screen p-2 flex items-center py-16'
       data-aos='zoom-in'
       data-aos-duration='2000'
       data-aos-mirror='true'
@@ -21,12 +21,14 @@ const Projects = () => {
           <ProjectItem
             title={'Recognição Visuográfica'}
             imgSrc={recognitionImg}
+            altImg={'Projeto Recognicão Visuográfica de local de crime'}
             projectUrl={'/recognition'}
             technology={'React.js'}
           />
           <ProjectItem
             title={'Pokémon'}
             imgSrc={pokemonImg}
+            altImg={'Projeto Pokémon'}
             projectUrl={'/pokemon'}
             technology={'React.js'}
           />

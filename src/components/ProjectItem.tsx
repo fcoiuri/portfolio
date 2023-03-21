@@ -7,13 +7,15 @@ interface ProjectItemProps {
   title: string;
   projectUrl: string;
   technology: string;
+  altImg: string;
 }
 
 export const ProjectItem: React.FC<ProjectItemProps> = ({
   imgSrc,
   title,
   projectUrl,
-  technology
+  technology,
+  altImg
 }) => {
   return (
     <div
@@ -24,7 +26,7 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({
       <Image
         className='rounded-xl group-hover:opacity-10'
         src={imgSrc}
-        alt='Recognição Visuográfica de local de crime'
+        alt={altImg}
       />
       <div
         className='hidden group-hover:block absolute top-[50%]

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillTelephoneFill } from 'react-icons/bs';
+import logo from '../../public/assets/logo.svg';
 
 const Navbar = () => {
   const [nav, setNav] = React.useState(false);
@@ -29,14 +30,17 @@ const Navbar = () => {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Image
-          src='/../public/assets/navLogo.png'
-          alt='/Iuri Mendes Logo'
-          width='85'
-          height='50'
-        />
+        <Link href='/'>
+          <Image
+            src={logo}
+            width='100'
+            height='50'
+            alt='/Iuri Mendes Logo'
+            className='cursor-pointer pt-3 pl-5'
+          />
+        </Link>
         <div>
-          <ul className='hidden md:flex '>
+          <ul className='hidden md:flex'>
             <li className='ml-10 text-sm uppercase'>
               <Link href='/'>Página Inicial</Link>
             </li>
@@ -49,7 +53,7 @@ const Navbar = () => {
             <li className='ml-10 text-sm uppercase'>
               <Link href='/#projects'>Projetos</Link>
             </li>
-            <li className='ml-10 text-sm uppercase'>
+            <li className='ml-10 mr-10 text-sm uppercase'>
               <Link href='/#contact'>Contato</Link>
             </li>
           </ul>
@@ -74,10 +78,11 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Image
-                src='/../public/assets/navLogo.png'
-                alt='/'
-                width='75'
-                height='50'
+                src={logo}
+                alt='Iuri Mendes logo'
+                width='70'
+                height='35'
+                className='left-0'
               />
               <div
                 className='rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer'

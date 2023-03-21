@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import React from 'react';
+import Navbar from '@/components/Navbar';
 
 export default function App({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -12,5 +13,10 @@ export default function App({ Component, pageProps }: AppProps) {
       offset: 120
     });
   }, []);
-  return <Component {...pageProps} />;
+  return (
+    <React.Fragment>
+      <Navbar />
+      <Component {...pageProps} />
+    </React.Fragment>
+  );
 }

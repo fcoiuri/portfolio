@@ -9,6 +9,10 @@ import javaScriptImg from '../../public/assets/skills/javaScript.png';
 import muiImg from '../../public/assets/skills/material-ui.png';
 import tailwindImg from '../../public/assets/skills/tailwind.png';
 import cssImg from '../../public/assets/skills/css.png';
+import vueJsImg from '../../public/assets/skills/vuejs.png';
+import bootstrapImg from '../../public/assets/skills/bootstrap.png';
+import dotNetImg from '../../public/assets/skills/dotnet.png';
+import aspNetImg from '../../public/assets/skills/aspnet.png';
 
 const Skills = () => {
   return (
@@ -26,13 +30,17 @@ const Skills = () => {
         <h2 className='py-2'>Tecnologias que domino</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           <SkillsDetails imgSrc={reactImg} name='React' />
-          <SkillsDetails imgSrc={typescriptImg} name='TypeScript' />
           <SkillsDetails imgSrc={nextjsImg} name='Next.js' />
+          <SkillsDetails imgSrc={vueJsImg} name='Vue.js' />
           <SkillsDetails imgSrc={reduxImg} name='Redux' />
+          <SkillsDetails imgSrc={typescriptImg} name='TypeScript' />
           <SkillsDetails imgSrc={javaScriptImg} name='JavaScript' />
           <SkillsDetails imgSrc={muiImg} name='MUI' />
           <SkillsDetails imgSrc={tailwindImg} name='Tailwind CSS' />
+          <SkillsDetails imgSrc={bootstrapImg} name='Bootstrap' />
           <SkillsDetails imgSrc={cssImg} name='CSS' />
+          <SkillsDetails imgSrc={dotNetImg} name='.Net' />
+          <SkillsDetails imgSrc={aspNetImg} name='AspNet' />
         </div>
       </div>
     </div>

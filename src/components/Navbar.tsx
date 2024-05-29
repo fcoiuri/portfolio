@@ -51,7 +51,7 @@ const Navbar = () => {
               <Link href='/#skills'>Habilidades</Link>
             </li>
             <li className='ml-10 text-sm uppercase'>
-              <Link href='/#projects'>Projetos</Link>
+              <Link href='/#experience'>Currículo</Link>
             </li>
             <li className='ml-10 mr-10 text-sm uppercase'>
               <Link href='/#contact'>Contato</Link>
@@ -114,9 +114,9 @@ const Navbar = () => {
                   Habilidades
                 </li>
               </Link>
-              <Link href='/#projects'>
+              <Link href='/#experience'>
                 <li onClick={handleNav} className='py-4 text-sm'>
-                  Projetos
+                  Currículo
                 </li>
               </Link>
               <Link href='/#contact'>

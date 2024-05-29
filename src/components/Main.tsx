@@ -18,13 +18,13 @@ const Main = () => {
             Vamos construir algo juntos
           </p>
           <h1 className='py-4 text-[#F9F6EE]'>
-            Olá, eu sou
+            Olá, sou
             <span className='text-[#d4af37]'>&nbsp;Iuri Mendes</span>
           </h1>
-          <h1 className='py-1 '>Desenvolvedor Front-End</h1>
+          <h1 className='py-1 '>Desenvolvedor de software</h1>
           <p className='py-4 text-gray-300 max-w-[70%] m-auto font-medium'>
             Estou focado e me especializando cada dia mais em construir
-            aplicações web front-end responsivas.
+            aplicações integrando tanto o front-end quanto o back-end.
           </p>
           <div className='flex items-center justify-between max-w-[450px] m-auto py-4'>
             <a
@@ -57,14 +57,6 @@ const Main = () => {
               p-6 cursor-pointer hover:scale-125 ease-in duration-300'
               >
                 <FaGithub size={'2em'} />
-              </div>
-            </a>
-            <a href='tel:5585985299906'>
-              <div
-                className='rounded-full shadow-lg shadow-[#3f3f3f]
-              p-6 cursor-pointer hover:scale-125 ease-in duration-300'
-              >
-                <BsFillTelephoneFill size={'2em'} />
               </div>
             </a>
           </div>

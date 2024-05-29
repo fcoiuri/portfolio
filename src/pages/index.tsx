@@ -4,17 +4,17 @@ import Navbar from '@/components/Navbar';
 import Main from '@/components/Main';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
-import Projects from '@/components/Projects';
+import Experience from '@/components/Experience';
 import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Iuri Mendes | Desenvolvedor Front-End</title>
+        <title>Iuri Mendes | Desenvolvedor de software</title>
         <meta
           name='description'
-          content='Portfólio do desenvolvedor front-end Iuri Mendes'
+          content='Portfólio do desenvolvedor de software Iuri Mendes'
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
@@ -23,7 +23,7 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
-      <Projects />
+      <Experience />
       <Contact />
     </>
   );

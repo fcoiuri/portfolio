@@ -19,13 +19,14 @@ const About = () => {
           </p>
           <h2 className='py-2'>Quem sou eu</h2>
           <p className='py-2 text-gray-300'>
-            Como desenvolvedor front-end, meu objetivo é utilizar minhas
-            habilidades em React, TypeScript, Redux, HTML e CSS, para criar
-            aplicativos da Web responsivos e de alta qualidade que melhorem a
-            experiência do usuário e impulsionem o crescimento dos negócios.
+            Como desenvolvedor, meu objetivo é utilizar minhas habilidades em
+            React, Next.js, TypeScript, JavaScript, .Net, Redux, HTML e CSS,
+            para criar aplicativos da web responsivos e de alta qualidade que
+            melhorem a experiência do usuário e impulsionem o crescimento dos
+            negócios.
           </p>
           <p className='py-2 text-gray-300'>
-            Eu me esforço para me manter atualizado com as tecnologias mais
+            Me esforço para me manter atualizado com as tecnologias mais
             recentes e as melhores práticas no desenvolvimento web, além disso,
             colaborar com equipes multifuncionais para oferecer soluções que
             superem as expectativas do usuário.
@@ -35,12 +36,12 @@ const About = () => {
             mundo da tecnologia da informação.
           </p>
           <p className='py-2 text-gray-300'>
-            Possuo experiência em React, Redux, TypeScript, Angular, HTML, CSS,
-            Material-UI, Tailwind, consumo de API dentre outras coisas.
+            Possuo experiência em React, Redux, TypeScript, Vue, Angular, HTML,
+            CSS, Material-UI, Tailwind, consumo de API dentre outras coisas.
           </p>
-          <Link href='/#projects'>
+          <Link href='/#experience'>
             <p className='py-2 text-gray-300 underline cursor-pointer'>
-              Confira meus projetos.
+              Confira minhas experiências.
             </p>
           </Link>
         </div>

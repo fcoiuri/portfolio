@@ -94,7 +94,7 @@ const Contact = () => {
         <p className='uppercase text-xl tracking-widest text-[#d4af37]'>
           Contato
         </p>
-        <h2 className='py-2'>Entrar em contato</h2>
+        <h2 className='py-2'>Me envie uma mensagem</h2>
         <div className='grid lg:grid-cols-5 gap-8'>
           <div
             className='col-span-3 lg:col-span-2 w-full h-full shadow-xl
@@ -110,7 +110,7 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className='py-2'>Iuri Mendes</h2>
-                <p>Desenvolvedor Front-End</p>
+                <p>Desenvolvedor de software</p>
               </div>
               <div className='flex items-center justify-center'>
                 <p className='uppercase pt-8 font-semibold'>
@@ -149,14 +149,6 @@ const Contact = () => {
                 p-6 cursor-pointer hover:scale-125 ease-in duration-300'
                     >
                       <FaGithub size={'2em'} />
-                    </div>
-                  </a>
-                  <a href='tel:5585985299906'>
-                    <div
-                      className='rounded-full shadow-lg shadow-[#3f3f3f]
-                p-6 cursor-pointer hover:scale-125 ease-in duration-300'
-                    >
-                      <BsFillTelephoneFill size={'2em'} />
                     </div>
                   </a>
                 </div>

@@ -14,9 +14,6 @@ const Main = () => {
     >
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
-          <p className='uppercase text-sm tracking-widest text-gray-300 font-medium'>
-            Vamos construir algo juntos
-          </p>
           <h1 className='py-4 text-[#F9F6EE]'>
             Olá, sou
             <span className='text-[#d4af37]'>&nbsp;Iuri Mendes</span>

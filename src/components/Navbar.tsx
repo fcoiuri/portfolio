@@ -91,11 +91,6 @@ const Navbar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className='border-b border-gray-300 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4'>
-                Vamos construir algo juntos
-              </p>
-            </div>
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
@@ -125,55 +120,44 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-            <div className='pt-20'>
-              <p className='uppercase tracking-widest text-[#d4af37] font-semibold'>
-                Entre em contato
-              </p>
-              <div
-                className='flex items-center justify-between my-4
-              w-full sm:w-[80%]'
+          </div>
+          <div className='flex flex-col items-center justify-center mt-auto mb-4'>
+            <p className='uppercase tracking-widest text-[#d4af37] font-semibold mb-4'>
+              Entre em contato
+            </p>
+            <div className='flex items-center justify-between w-[80%]'>
+              <a
+                href='https://linkedin.com/in/fcoiuri/'
+                target='_blank'
+                rel='noreferrer'
               >
-                <a
-                  href='https://linkedin.com/in/fcoiuri/'
-                  target='_blank'
-                  rel='noreferrer'
+                <div
+                  className='rounded-full shadow-lg shadow-[#494949]
+                  p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                 >
-                  <div
-                    className='rounded-full shadow-lg shadow-[#494949]
+                  <FaLinkedinIn size={'1.5em'} />
+                </div>
+              </a>
+              <a href='mailto: fcoiuri@gmail.com'>
+                <div
+                  className='rounded-full shadow-lg shadow-[#494949]
                   p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                  >
-                    <FaLinkedinIn size={'1.5em'} />
-                  </div>
-                </a>
-                <a href='mailto: fcoiuri@gmail.com'>
-                  <div
-                    className='rounded-full shadow-lg shadow-[#494949]
-                  p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                  >
-                    <AiOutlineMail size={'1.5em'} />
-                  </div>
-                </a>
-                <a
-                  href='https://github.com/fcoiuri'
-                  target='_blank'
-                  rel='noreferrer'
                 >
-                  <div
-                    className='rounded-full shadow-lg shadow-[#494949]
+                  <AiOutlineMail size={'1.5em'} />
+                </div>
+              </a>
+              <a
+                href='https://github.com/fcoiuri'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <div
+                  className='rounded-full shadow-lg shadow-[#494949]
                   p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                  >
-                    <FaGithub size={'1.5em'} />
-                  </div>
-                </a>
-                <a href='tel:5585985299906'>
-                  <div
-                    className='rounded-full shadow-lg shadow-[#494949]
-                  p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                  >
-                    <BsFillTelephoneFill size={'1.5em'} />
-                  </div>
-                </a>
-              </div>
+                >
+                  <FaGithub size={'1.5em'} />
+                </div>
+              </a>
             </div>
           </div>
         </div>

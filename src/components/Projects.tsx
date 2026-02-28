@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';

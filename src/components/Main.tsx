@@ -1,8 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillTelephoneFill } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 import iuriImg from '../../public/assets/Iuri.png';
 

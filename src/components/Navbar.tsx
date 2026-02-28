@@ -1,11 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillTelephoneFill } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
-import logo from '../../public/assets/logo.svg';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -26,8 +23,6 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleShowShadow);
   }, []);
-
-  console.log(i18n.language);
 
   return (
     <div

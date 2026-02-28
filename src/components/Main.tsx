@@ -56,16 +56,16 @@ const Main = () => {
           </div>
 
           {/* Floating icons - Hidden on mobile */}
-          <div className='absolute -top-5 -left-5 w-20 h-20 bg-brand-cyan rounded-2xl border-4 border-brand-black flex items-center justify-center text-4xl shadow-[6px_6px_0_#1A1A1A] hidden md:flex'>
+          <div className='absolute -top-3 -left-3 md:-top-5 md:-left-5 w-14 h-14 md:w-20 md:h-20 bg-brand-cyan rounded-2xl border-4 border-brand-black flex items-center justify-center text-2xl md:text-4xl shadow-[4px_4px_0_#1A1A1A] md:shadow-[6px_6px_0_#1A1A1A] z-20'>
             <FaGithub className="text-brand-black" />
           </div>
 
-          <div className='absolute top-20 -right-8 w-[70px] h-[70px] bg-brand-yellow rounded-full border-4 border-brand-black flex items-center justify-center text-3xl shadow-[6px_6px_0_#1A1A1A] hidden md:flex'>
+          <div className='absolute top-14 -right-3 md:top-20 md:-right-8 w-12 h-12 md:w-[70px] md:h-[70px] bg-brand-yellow rounded-full border-4 border-brand-black flex items-center justify-center text-xl md:text-3xl shadow-[4px_4px_0_#1A1A1A] md:shadow-[6px_6px_0_#1A1A1A] z-20'>
             <FaLinkedinIn className="text-brand-black" />
           </div>
 
           {/* Name Badge with Arrow */}
-          <div className='absolute top-[50px] right-[40px] md:right-[100px] z-20 hidden md:block'>
+          <div className='absolute top-[30px] right-[80px] md:top-[50px] md:right-[100px] z-30 block'>
             {/* The Badge */}
             <div className='bg-brand-blue border-4 border-brand-black rounded-full py-2 px-6 text-lg font-extrabold text-brand-black shadow-[4px_4px_0_#1A1A1A] relative z-10'>
               {t('hero.dev_badge')}

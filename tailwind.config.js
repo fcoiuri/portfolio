@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          pink: '#FF69B4',
+          pink: '#FF4154',
           cyan: '#00CED1',
           yellow: '#FFD700',
           purple: '#9D4EDD',

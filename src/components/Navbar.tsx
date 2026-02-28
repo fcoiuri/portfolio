@@ -27,6 +27,8 @@ const Navbar = () => {
     window.addEventListener('scroll', handleShowShadow);
   }, []);
 
+  console.log(i18n.language);
+
   return (
     <div
       className={
@@ -64,7 +66,7 @@ const Navbar = () => {
             <li className='flex items-center gap-2 ml-4'>
               <button
                 onClick={() => changeLanguage('pt')}
-                className={`text-sm font-bold px-2 py-1 border-2 border-brand-black ${i18n.language === 'pt' ? 'bg-brand-pink text-brand-black' : 'bg-brand-white text-brand-black hover:bg-brand-beige'} shadow-[2px_2px_0_#1A1A1A] transition-all`}
+                className={`text-sm font-bold px-2 py-1 border-2 border-brand-black ${i18n.language === 'pt' || i18n.language === 'pt-BR' ? 'bg-brand-pink text-brand-black' : 'bg-brand-white text-brand-black hover:bg-brand-beige'} shadow-[2px_2px_0_#1A1A1A] transition-all`}
               >
                 PT
               </button>

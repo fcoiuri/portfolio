@@ -1,4 +1,8 @@
 {
+  "head": {
+    "title": "Iuri Mendes | Desenvolvedor de Software",
+    "description": "Portfólio do desenvolvedor de software Iuri Mendes"
+  },
   "navbar": {
     "home": "Página Inicial",
     "skills": "Habilidades",

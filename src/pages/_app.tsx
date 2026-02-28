@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import '@/i18n';
+import HydrationFix from '@/components/HydrationFix';
 
 export default function App({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -15,9 +16,9 @@ export default function App({ Component, pageProps }: AppProps) {
     });
   }, []);
   return (
-    <React.Fragment>
+    <HydrationFix>
       <Navbar />
       <Component {...pageProps} />
-    </React.Fragment>
+    </HydrationFix>
   );
 }

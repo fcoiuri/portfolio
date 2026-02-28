@@ -1,0 +1,61 @@
+{
+  "navbar": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, my name is Iuri Mendes",
+    "title_line1": "I BUILD FOR",
+    "title_line2": "GROWTH.",
+    "description": "I'm a Mid-Level Front-end Developer with 4+ years of experience, specialized in React, React Native, and Tailwind CSS. I build fluid and modern applications.",
+    "btn_projects": "View Projects",
+    "badge_available_desktop": "Available for projects",
+    "badge_available_mobile": "Available",
+    "dev_badge": "Iuri"
+  },
+  "projects": {
+    "highlight_badge": "⭐ Highlighted Project",
+    "title": "Meu Niver Online",
+    "description": "Complete Micro SaaS to create custom birthday pages. Integrated payment system, interactive editor, and customizable templates.",
+    "btn_view": "View project",
+    "badge_production": "In Production"
+  },
+  "skills": {
+    "title_small": "What I master",
+    "title_large": "Frontend & Fullstack Ecosystem",
+    "subtitle": "Technologies I work with"
+  },
+  "experience": {
+    "title_small": "My Journey",
+    "title_large": "Professional Experience",
+    "present": "Present",
+    "role_fullstack": "Full Stack Developer",
+    "role_frontend": "Front-end Developer",
+    "role_frontend_pleno": "Mid-Level Front-end Developer",
+    "role_sustain": "Systems Support",
+    "role_scholar": "Full Stack Scholar",
+
+    "sonae_desc": "Development of the app and backoffice for an electric vehicle charging platform. Focus on performance, code quality, and architecture.",
+    "maxia_desc": "Development of responsive applications and an educational game using Phaser to create interactive maps.",
+    "techdes_desc": "Development of responsive applications and scalable systems. Internationalization with i18n and deployments using Jenkins.",
+    "fitbank_desc": "Implementation of micro front-ends integrating React applications into a Ruby on Rails monolith. CI/CD automation.",
+    "trt_desc": "Implementation of system improvements, bug detection/correction, and database maintenance.",
+    "pibiti_desc": "Creation of interactive web interfaces with Google Maps API to track microcontrollers in real-time."
+  },
+  "contact": {
+    "title": "Let's work together!",
+    "subtitle": "Open to opportunities or just to have a chat.",
+    "name_placeholder": "Name",
+    "phone_placeholder": "Phone",
+    "email_placeholder": "Email",
+    "message_placeholder": "Your message",
+    "btn_send": "Send Message",
+    "btn_sending": "Sending...",
+    "footer_scroll": "Back to top",
+    "success_msg": "Message sent successfully!",
+    "error_msg": "An error occurred while sending."
+  }
+}

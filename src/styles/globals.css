@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,38 +7,46 @@
 html {
   scroll-behavior: smooth !important;
 }
-@layer base {
-  body {
-    @apply bg-[#212121] text-[#EDEADE] tracking-wide;
+
+body {
+  @apply bg-brand-beige text-brand-black tracking-wide overflow-x-hidden min-h-screen relative;
+  font-family: 'Sora', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-extrabold text-brand-black tracking-tight;
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl;
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl;
+}
+
+li {
+  @apply cursor-pointer transition-colors duration-300;
+}
+
+@layer components {
+  .neo-box {
+    @apply border-4 border-brand-black shadow-[8px_8px_0px_#1A1A1A] rounded-[24px] transition-transform duration-300;
+  }
+  .neo-box:hover {
+    @apply translate-y-[-8px] shadow-[12px_12px_0px_#1A1A1A];
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold text-[#F9F6EE];
+  .neo-btn {
+    @apply px-6 py-3 rounded-full uppercase tracking-wider text-sm font-bold text-brand-black border-4 border-brand-black shadow-[6px_6px_0px_#1A1A1A] transition-all duration-200;
   }
 
-  h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
-  }
-
-  h2 {
-    @apply text-3xl sm:text-4xl;
-  }
-
-  li {
-    @apply cursor-pointer hover:no-underline text-[#F9F6EE];
-  }
-
-  p {
-    @apply text-[#F9F6EE];
-  }
-
-  button {
-    @apply shadow-xl rounded-xl 
-    uppercase bg-gradient-to-r from-[#d4af37] to-[#daa520] text-white;
+  .neo-btn:hover {
+    @apply translate-x-[-2px] translate-y-[-2px] shadow-[8px_8px_0px_#1A1A1A];
   }
 }

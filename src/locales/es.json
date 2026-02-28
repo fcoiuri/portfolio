@@ -1,0 +1,61 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, mi nombre es Iuri Mendes",
+    "title_line1": "CONSTRUYO PARA",
+    "title_line2": "CRECIMIENTO.",
+    "description": "Soy Desarrollador Front-end Semi-Senior con 4+ años de experiencia, especializado en React, React Native y Tailwind CSS. Creo aplicaciones fluidas y modernas.",
+    "btn_projects": "Ver Proyectos",
+    "badge_available_desktop": "Disponible para proyectos",
+    "badge_available_mobile": "Disponible",
+    "dev_badge": "Iuri"
+  },
+  "projects": {
+    "highlight_badge": "⭐ Proyecto Destacado",
+    "title": "Meu Niver Online",
+    "description": "Micro SaaS completo para la creación de páginas de cumpleaños personalizadas. Sistema de pagos integrado, editor interactivo y plantillas.",
+    "btn_view": "Ver proyecto",
+    "badge_production": "En Producción"
+  },
+  "skills": {
+    "title_small": "Lo que domino",
+    "title_large": "Ecosistema Frontend y Fullstack",
+    "subtitle": "Tecnologías que manejo"
+  },
+  "experience": {
+    "title_small": "Mi Trayectoria",
+    "title_large": "Experiencia Profesional",
+    "present": "Presente",
+    "role_fullstack": "Desarrollador Full Stack",
+    "role_frontend": "Desarrollador Front-end",
+    "role_frontend_pleno": "Desarrollador Front-end Semi-Senior",
+    "role_sustain": "Soporte de Sistemas",
+    "role_scholar": "Becario Full Stack",
+
+    "sonae_desc": "Desarrollo de la app y panel administrativo para una plataforma de carga de vehículos eléctricos. Foco en rendimiento, calidad y arquitectura.",
+    "maxia_desc": "Desarrollo de aplicaciones responsivas y creación de juego educativo usando Phaser para mapas interactivos.",
+    "techdes_desc": "Desarrollo de aplicaciones y sistemas escalables. Internacionalización con i18n y despliegues usando Jenkins.",
+    "fitbank_desc": "Implementación de micro front-ends conectando aplicaciones React a un monolito en Ruby on Rails. Automatización CI/CD.",
+    "trt_desc": "Mejora de sistemas, detección/corrección de errores y mantenimiento de bases de datos.",
+    "pibiti_desc": "Creación de interfaces web interactivas con la API de Google Maps para rastrear microcontroladores en tiempo real."
+  },
+  "contact": {
+    "title": "¡Trabajemos juntos!",
+    "subtitle": "Abierto a oportunidades o simplemente para charlar.",
+    "name_placeholder": "Nombre",
+    "phone_placeholder": "Teléfono",
+    "email_placeholder": "Correo",
+    "message_placeholder": "Tu mensaje",
+    "btn_send": "Enviar Mensaje",
+    "btn_sending": "Enviando...",
+    "footer_scroll": "Volver arriba",
+    "success_msg": "¡Mensaje enviado con éxito!",
+    "error_msg": "Ocurrió un error al enviar tu mensaje."
+  }
+}

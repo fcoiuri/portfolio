@@ -1,0 +1,26 @@
+
+> portfolio@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env
+
+  Running TypeScript ...
+  Creating an optimized production build ...
+✓ Compiled successfully in 6.8s
+  Collecting page data using 11 workers ...
+🌐 i18next is maintained with support from Locize — consider powering your project with managed localization (AI, CDN, integrations): https://locize.com 💙
+🌐 i18next is maintained with support from Locize — consider powering your project with managed localization (AI, CDN, integrations): https://locize.com 💙
+🌐 i18next is maintained with support from Locize — consider powering your project with managed localization (AI, CDN, integrations): https://locize.com 💙
+  Generating static pages using 11 workers (0/3) ...
+🌐 i18next is maintained with support from Locize — consider powering your project with managed localization (AI, CDN, integrations): https://locize.com 💙
+✓ Generating static pages using 11 workers (3/3) in 277.7ms
+  Finalizing page optimization ...
+
+Route (pages)
+┌ ○ /
+├   /_app
+└ ○ /404
+
+○  (Static)  prerendered as static content
+

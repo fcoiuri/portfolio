@@ -1,178 +1,183 @@
 import React from 'react';
-import { ProjectItem } from './ProjectItem';
-import recognitionImg from '../../public/assets/projects/recognition.png';
-import pokemonImg from '../../public/assets/projects/pokemon.png';
+import { FaLaptopCode, FaBriefcase, FaGraduationCap } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+  const { t } = useTranslation();
+
   return (
-    <div
-      id='experience'
-      className='w-full md:h-screen p-2 flex items-center'
-      data-aos='zoom-in'
-      data-aos-duration='2000'
-      data-aos-mirror='true'
-    >
-      <div className='max-w-[1240px] mx-auto px-2 '>
-        <p className='uppercase text-xl tracking-widest text-[#d4af37]'>
-          Currículo
+    <section id="experience" className="w-full max-w-[1200px] mx-auto px-6 py-16 md:py-24 relative z-10">
+      <div className="text-center mb-16 md:mb-24">
+        <p className="text-base md:text-lg font-bold text-brand-black mb-3 opacity-80 uppercase tracking-widest">
+          {t('experience.title_small')}
         </p>
-        <h2 className='py-2'>Experiências</h2>
-        <div className='w-full py-4 flex justify-center items-center'>
-          <div className='w-full'>
-            <main className='grid'>
-              <div className='relative'>
-                <div className='border-l-2 border-gray-700 pl-6 pr-6'>
-                  <div className='relative'>
-                    <a href='https://maxia.education/' target='_blank'>
-                      <div className='absolute w-4 h-4 bg-[#d4af37] rounded-full -left-8 top-0.5'></div>
-                      <div className='rounded-lg p-5 border border-slate-400 bg-[#373737] cursor-pointer transition-shadow  duration-300 mb-5 hover:shadow-sm  hover:shadow-white'>
-                        <h4 className='text-[#d4af37]'>Max.IA Education</h4>
-                        <h3 className='text-lg pt-2 pb-1 font-medium '>
-                          Desenvolvedor Front-end pleno
-                        </h3>
-                        <span>Dez 2023 - Presente</span>
-                        <p className='pt-1 text-base'>
-                          <span className='font-semibold'>Tecnologias:</span>{' '}
-                          React, Next.js, TypeScript, Bootstrap, Tailwind CSS,
-                          Docker.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
+        <h2 className="text-4xl md:text-5xl font-extrabold text-brand-black">
+          {t('experience.title_large')}
+        </h2>
+      </div>
 
-                  <div className='relative'>
-                    <a href='https://techhive.com.br/' target='_blank'>
-                      <div className='absolute w-4 h-4 bg-[#d4af37] rounded-full -left-8 top-0.5'></div>
-                      <div className='rounded-lg p-5 border border-slate-400 bg-[#373737] cursor-pointer transition-shadow  duration-300 mb-5 hover:shadow-sm  hover:shadow-white'>
-                        <h4 className='text-[#d4af37]'>Tech Hive</h4>
-                        <h3 className='text-lg pt-2 pb-1 font-medium '>
-                          Desenvolvedor Full Stack Pleno
-                        </h3>
-                        <span>Jul 2023 - Dez 2023</span>
-                        <p className='pt-1 text-base'>
-                          <span className='font-semibold'>Tecnologias:</span>{' '}
-                          Vue.js, React, Next.js, React Query, jQuery, i18n,
-                          TypeScript, JavaScript, .Net, ASP.NET Core - Identity,
-                          Jenkins, EntityFramework Core, ASP.NET MVC,
-                          PostgreSQL, PHP Laravel.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
+      <div className="w-full flex justify-center">
+        <div className="w-full max-w-[900px] relative">
+          {/* Central Line for desktop, Left Line for mobile */}
+          <div className="absolute left-[20px] md:left-1/2 md:-ml-[2px] top-0 bottom-0 w-[4px] bg-brand-black z-0"></div>
 
-                  <div className='relative'>
-                    <a href='https://fitbank.com.br/' target='_blank'>
-                      <div className='absolute w-4 h-4 bg-[#d4af37] rounded-full -left-8 top-0.5'></div>
-                      <div className='rounded-lg p-5 border border-slate-400 bg-[#373737] cursor-pointer transition-shadow  duration-300 mb-5 hover:shadow-sm  hover:shadow-white'>
-                        <h4 className='text-[#d4af37]'>FitBank 450</h4>
-                        <h3 className='text-lg pt-2 pb-1 font-medium '>
-                          Desenvolvedor Front-end
-                        </h3>
-                        <span>Jan 2022 - Jul 2023</span>
-                        <p className='pt-1 text-base'>
-                          <span className='font-semibold'>Tecnologias:</span>{' '}
-                          React, Next.js, Redux, Material-UI, Prisma,
-                          TypeScript, NextAuth.js, i18n, Node.js, CI/CD Azure
-                          Pipelines, GitHub Actions.
-                        </p>
-                      </div>
-                    </a>
+          <div className="space-y-12">
+
+            {/* Sonae Sierra */}
+            <div className="relative flex flex-col md:flex-row items-center justify-between w-full group">
+              <div className="hidden md:block w-5/12"></div>
+              <div className="absolute left-0 md:left-1/2 md:-ml-6 top-6 w-12 h-12 rounded-full border-4 border-brand-black bg-brand-cyan shadow-[4px_4px_0_#1A1A1A] z-10 flex items-center justify-center">
+                <FaLaptopCode className="text-brand-black text-xl" />
+              </div>
+              <div className="w-full md:w-5/12 pl-16 md:pl-0">
+                <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
+                  <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
+                    Mai 2024 - {t('experience.present')}
                   </div>
-                  <div className='relative'>
-                    <a href='https://www.trt7.jus.br/' target='_blank'>
-                      <div className='absolute w-4 h-4 bg-[#d4af37] rounded-full -left-8 top-0.5'></div>
-                      <div className='rounded-lg p-5 border border-slate-400 bg-[#373737] cursor-pointer transition-shadow  duration-300 mb-5 hover:shadow-sm  hover:shadow-white'>
-                        <h4 className='text-[#d4af37]'>
-                          Tribunal Regional do Trabalho
-                        </h4>
-                        <h3 className='text-lg pt-2 pb-1 font-medium '>
-                          Estagiário de Sustentação de Sistemas
-                        </h3>
-                        <span>Jan 2020 - Dez 2021</span>
-                        <p className='pt-1 text-base'>
-                          <span className='font-semibold'>Tecnologias:</span>{' '}
-                          JavaScript, jQuery, HTML, CSS, Node.js.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div className='relative'>
-                    <a href='https://ifce.edu.br/prpi/pibiti' target='_blank'>
-                      <div className='absolute w-4 h-4 bg-[#d4af37] rounded-full -left-8 top-0.5'></div>
-                      <div className='rounded-lg p-5 border border-slate-400 bg-[#373737] cursor-pointer transition-shadow  duration-300 mb-5 hover:shadow-sm  hover:shadow-white'>
-                        <h4 className='text-[#d4af37]'>PIBITI IFCE</h4>
-                        <h3 className='text-lg pt-2 pb-1 font-medium '>
-                          Bolsista Full Stack
-                        </h3>
-                        <span>Jun 2019 - Jul 2020</span>
-                        <p className='pt-1 text-base'>
-                          <span className='font-semibold'>Tecnologias:</span>
-                          React, Next.js, TypeScript, Bootstrap, Tailwind CSS,
-                          Docker.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
+                  <h3 className="text-2xl font-extrabold text-brand-black mb-1">
+                    {t('experience.role_frontend_pleno')}
+                  </h3>
+                  <h4 className="text-lg font-bold text-brand-cyan mb-4">Sonae Sierra</h4>
+                  <p className="text-brand-black/80 font-medium mb-4">
+                    {t('experience.sonae_desc')}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-bold">App:</span> React Native, Expo, Zustand.<br />
+                    <span className="font-bold">Web:</span> React 19, Tailwind CSS 4, Radix UI.
+                  </p>
                 </div>
               </div>
-            </main>
+            </div>
+
+            {/* Max.ia */}
+            <div className="relative flex flex-col md:flex-row-reverse items-center justify-between w-full group">
+              <div className="hidden md:block w-5/12"></div>
+              <div className="absolute left-0 md:left-1/2 md:-ml-6 top-6 w-12 h-12 rounded-full border-4 border-brand-black bg-brand-pink shadow-[4px_4px_0_#1A1A1A] z-10 flex items-center justify-center">
+                <FaLaptopCode className="text-brand-black text-xl" />
+              </div>
+              <div className="w-full md:w-5/12 pl-16 md:pl-0">
+                <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
+                  <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
+                    Dez 2023 - Mai 2025
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-brand-black mb-1">
+                    {t('experience.role_frontend_pleno')}
+                  </h3>
+                  <h4 className="text-lg font-bold text-brand-pink mb-4">Max.ia Education</h4>
+                  <p className="text-brand-black/80 font-medium mb-4">
+                    {t('experience.maxia_desc')}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-bold">Stack:</span> Next.js, TypeScript, React Query, Cypress, Tailwind CSS.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Techdes */}
+            <div className="relative flex flex-col md:flex-row items-center justify-between w-full group">
+              <div className="hidden md:block w-5/12"></div>
+              <div className="absolute left-0 md:left-1/2 md:-ml-6 top-6 w-12 h-12 rounded-full border-4 border-brand-black bg-brand-purple shadow-[4px_4px_0_#1A1A1A] z-10 flex items-center justify-center">
+                <FaBriefcase className="text-brand-black text-xl" />
+              </div>
+              <div className="w-full md:w-5/12 pl-16 md:pl-0">
+                <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
+                  <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
+                    Jul 2023 - Dez 2023
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-brand-black mb-1">
+                    {t('experience.role_fullstack')}
+                  </h3>
+                  <h4 className="text-lg font-bold text-brand-purple mb-4">Techdes</h4>
+                  <p className="text-brand-black/80 font-medium mb-4">
+                    {t('experience.techdes_desc')}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-bold">Stack:</span> React, Next.js, ASP.NET Core, Vue.js, PostgreSQL.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* FitBank 450 */}
+            <div className="relative flex flex-col md:flex-row-reverse items-center justify-between w-full group">
+              <div className="hidden md:block w-5/12"></div>
+              <div className="absolute left-0 md:left-1/2 md:-ml-6 top-6 w-12 h-12 rounded-full border-4 border-brand-black bg-brand-green shadow-[4px_4px_0_#1A1A1A] z-10 flex items-center justify-center">
+                <FaBriefcase className="text-brand-black text-xl" />
+              </div>
+              <div className="w-full md:w-5/12 pl-16 md:pl-0">
+                <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
+                  <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
+                    Jan 2022 - Jul 2023
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-brand-black mb-1">
+                    {t('experience.role_frontend')}
+                  </h3>
+                  <h4 className="text-lg font-bold text-brand-green mb-4">FitBank 450</h4>
+                  <p className="text-brand-black/80 font-medium mb-4">
+                    {t('experience.fitbank_desc')}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-bold">Stack:</span> React, Redux, Material-UI, Prisma, TypeScript.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* TRT */}
+            <div className="relative flex flex-col md:flex-row items-center justify-between w-full group">
+              <div className="hidden md:block w-5/12"></div>
+              <div className="absolute left-0 md:left-1/2 md:-ml-6 top-6 w-12 h-12 rounded-full border-4 border-brand-black bg-brand-yellow shadow-[4px_4px_0_#1A1A1A] z-10 flex items-center justify-center">
+                <FaGraduationCap className="text-brand-black text-xl" />
+              </div>
+              <div className="w-full md:w-5/12 pl-16 md:pl-0">
+                <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
+                  <div className="inline-block bg-brand-cyan neo-badge px-3 py-1 text-sm font-bold mb-4">
+                    Mar 2020 - Jan 2022
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-brand-black mb-1">
+                    {t('experience.role_sustain')}
+                  </h3>
+                  <h4 className="text-lg font-bold text-brand-yellow mb-4">TRT 7ª Região</h4>
+                  <p className="text-brand-black/80 font-medium mb-4">
+                    {t('experience.trt_desc')}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-bold">Stack:</span> React, JavaScript, HTML, CSS, SQL.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* PIBITI */}
+            <div className="relative flex flex-col md:flex-row-reverse items-center justify-between w-full group">
+              <div className="hidden md:block w-5/12"></div>
+              <div className="absolute left-0 md:left-1/2 md:-ml-6 top-6 w-12 h-12 rounded-full border-4 border-brand-black bg-brand-cyan shadow-[4px_4px_0_#1A1A1A] z-10 flex items-center justify-center">
+                <FaGraduationCap className="text-brand-black text-xl" />
+              </div>
+              <div className="w-full md:w-5/12 pl-16 md:pl-0">
+                <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
+                  <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
+                    Ago 2019 - Ago 2021
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-brand-black mb-1">
+                    {t('experience.role_scholar')}
+                  </h3>
+                  <h4 className="text-lg font-bold text-brand-cyan mb-4">PIBITI IFCE</h4>
+                  <p className="text-brand-black/80 font-medium mb-4">
+                    {t('experience.pibiti_desc')}
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-bold">Stack:</span> React, Node.js, Firebase, JavaScript.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-        {/*
-        <div className='grid md:grid-cols-2 gap-8'>
-          {/* <div>
-            <span className='font-semibold text-xl'>
-              Desenvolvedor Front-end pleno
-            </span>
-            <div>
-              <span className='font-normal'>
-                <a href='https://maxia.education/' target='_blank'>
-                  Max.IA Education
-                </a>{' '}
-                | Dez 2023 - Presente
-              </span>
-            </div>
-            <li className='mt-2'>
-              <span className='font-semibold'>Tecnologias:</span> React,
-              Next.js, TypeScript, Bootstrap, Tailwind CSS, Docker.
-            </li>
-          </div>
-          <div>
-            <span className='font-semibold text-xl'>
-              Desenvolvedor Front-end pleno
-            </span>
-            <div>
-              <span className='font-normal'>
-                <a href='https://maxia.education/' target='_blank'>
-                  Max.IA Education
-                </a>{' '}
-                | Dez 2023 - Presente
-              </span>
-            </div>
-            <li className='mt-2'>
-              <span className='font-semibold'>Tecnologias:</span> React,
-              Next.js, TypeScript, Bootstrap, Tailwind CSS, Docker.
-            </li>
-          </div> */}
-        {/* <ProjectItem
-            title={'Recognição Visuográfica'}
-            imgSrc={recognitionImg}
-            altImg={'Projeto Recognicão Visuográfica de local de crime'}
-            projectUrl={'/recognition'}
-            technology={'React.js'}
-          />
-          <ProjectItem
-            title={'Pokémon'}
-            imgSrc={pokemonImg}
-            altImg={'Projeto Pokémon'}
-            projectUrl={'/pokemon'}
-            technology={'React.js'}
-          /> */}
-        {/*
-        </div>
-      */}
       </div>
-    </div>
+    </section>
   );
 };
 

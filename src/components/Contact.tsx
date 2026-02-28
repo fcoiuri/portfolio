@@ -4,12 +4,13 @@ import emailjs from 'emailjs-com';
 import Link from 'next/link';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillTelephoneFill } from 'react-icons/bs';
+import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import meImg from '../../public/assets/me2.png';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [showCaptcha, setShowCaptcha] = React.useState(false);
   const [showError, setShowError] = React.useState(false);
   const [formSubmitted, setFormSubmitted] = React.useState({
@@ -83,167 +84,52 @@ const Contact = () => {
   };
 
   return (
-    <div
-      id='contact'
-      data-aos='zoom-in'
-      data-aos-duration='2000'
-      data-aos-mirror='true'
-      className='w-full lg:h-screen'
-    >
-      <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
-        <p className='uppercase text-xl tracking-widest text-[#d4af37]'>
-          Contato
+    <section id="contact" className="w-full max-w-[1200px] mx-auto px-6 py-16 md:py-24 relative z-10">
+      <div className="neo-box bg-brand-cyan p-8 md:p-16 text-center shadow-[12px_12px_0px_#1A1A1A]">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-brand-black mb-6">
+          {t('contact.title')}
+        </h2>
+        <p className="text-lg md:text-xl font-medium text-brand-black mb-12 opacity-90 max-w-2xl mx-auto">
+          {t('contact.subtitle')}
         </p>
-        <h2 className='py-2'>Me envie uma mensagem</h2>
-        <div className='grid lg:grid-cols-5 gap-8'>
-          <div
-            className='col-span-3 lg:col-span-2 w-full h-full shadow-xl
-           shadow-[#2b2b2b] rounded-xl p-4'
+
+        <div className="flex flex-col md:flex-row justify-center items-stretch md:items-center gap-6 flex-wrap">
+          <a
+            href="mailto:fcoiuri@gmail.com"
+            className="flex items-center justify-center gap-3 bg-brand-yellow neo-btn w-full md:w-auto md:min-w-[200px] py-4 text-lg hover:scale-[1.02]"
           >
-            <div className='lg:p-4 h-full'>
-              <div>
-                <Image
-                  className='rounded-xl hover:scale-105 ease-in duration-300'
-                  src={meImg}
-                  alt='Iuri Mendes'
-                />
-              </div>
-              <div>
-                <h2 className='py-2'>Iuri Mendes</h2>
-                <p>Desenvolvedor de software</p>
-              </div>
-              <div className='flex items-center justify-center'>
-                <p className='uppercase pt-8 font-semibold'>
-                  Conecte-se comigo
-                </p>
-              </div>
-              <div>
-                <div className='flex items-center justify-between py-4'>
-                  <a
-                    href='https://linkedin.com/in/fcoiuri/'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <div
-                      className='rounded-full shadow-lg shadow-[#3f3f3f]
-                p-6 cursor-pointer hover:scale-125 ease-in duration-300'
-                    >
-                      <FaLinkedinIn size={'2em'} />
-                    </div>
-                  </a>
-                  <a href='mailto: fcoiuri@gmail.com'>
-                    <div
-                      className='rounded-full shadow-lg shadow-[#3f3f3f]
-                    p-6 cursor-pointer hover:scale-125 ease-in duration-300'
-                    >
-                      <AiOutlineMail size={'2em'} />
-                    </div>
-                  </a>
-                  <a
-                    href='https://github.com/fcoiuri'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <div
-                      className='rounded-full shadow-lg shadow-[#3f3f3f]
-                p-6 cursor-pointer hover:scale-125 ease-in duration-300'
-                    >
-                      <FaGithub size={'2em'} />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-span-3 w-full h-auto shadow-xl shadow-[#2b2b2b] rounded-xl lg:p-4'>
-            <div className='p-4'>
-              {formSubmitted.title === '' ? (
-                <React.Fragment>
-                  {!showCaptcha ? (
-                    <form onSubmit={submitFormAndShowCaptcha}>
-                      <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2'>Nome</label>
-                        <input
-                          value={values.name}
-                          onChange={handleChange}
-                          className='border-2 rounded-lg p-3 flex border-gray-300 text-[#040404]'
-                          type='text'
-                          name='name'
-                          required
-                        />
-                      </div>
-                      <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2'>E-mail</label>
-                        <input
-                          value={values.email}
-                          onChange={handleChange}
-                          className='border-2 rounded-lg p-3 flex border-gray-300 text-[#040404]'
-                          type='email'
-                          name='email'
-                          required
-                        />
-                      </div>
-                      <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2'>
-                          Assunto
-                        </label>
-                        <input
-                          value={values.subject}
-                          onChange={handleChange}
-                          className='border-2 rounded-lg p-3 flex border-gray-300 text-[#040404]'
-                          type='text'
-                          name='subject'
-                          required
-                        />
-                      </div>
-                      <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2'>
-                          Mensagem
-                        </label>
-                        <textarea
-                          onChange={handleChange}
-                          value={values.message}
-                          className='border-2 rounded-lg p-3 border-gray-300 text-[#040404]'
-                          rows={10}
-                          name='message'
-                          required
-                        ></textarea>
-                      </div>
-                      <button className='w-full p-4 mt-4'>
-                        Enviar mensagem
-                      </button>
-                    </form>
-                  ) : (
-                    // <div className='flex w-full h-auto items-center justify-center col-span-3'>
-                    <div className='flex justify-center '>
-                      <ReCAPTCHA
-                        sitekey={process.env.REACT_APP_CAPTCHA_KEY}
-                        onChange={sendEmail}
-                      />
-                    </div>
-                  )}
-                </React.Fragment>
-              ) : (
-                <div className='flex flex-col items-center'>
-                  <h3 className=' text-2xl'>{formSubmitted.title}!</h3>
-                  <p className='pt-1'>{formSubmitted.paragraph}</p>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-        <div className='flex justify-center py-12'>
-          <Link href='/'>
-            <div
-              className='rounded-full shadow-lg shadow-gray-500
-            p-4 cursor-pointer hover:scale-110 ease-in duration-300'
-            >
-              <HiOutlineChevronDoubleUp className='text-[#d4af37]' size={30} />
-            </div>
-          </Link>
+            <AiOutlineMail size={24} />
+            Email
+          </a>
+          <a
+            href="https://github.com/fcoiuri"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 bg-brand-pink neo-btn w-full md:w-auto md:min-w-[200px] py-4 text-lg hover:scale-[1.02]"
+          >
+            <FaGithub size={24} />
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/fcoiuri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 bg-brand-purple neo-btn w-full md:w-auto md:min-w-[200px] py-4 text-lg hover:scale-[1.02]"
+          >
+            <FaLinkedinIn size={24} />
+            LinkedIn
+          </a>
         </div>
       </div>
-    </div>
+
+      <div className="flex justify-center mt-16 md:mt-24">
+        <Link href="/">
+          <div className="neo-btn bg-brand-white p-4 flex justify-center items-center hover:scale-110 cursor-pointer">
+            <HiOutlineChevronDoubleUp className="text-brand-black" size={30} />
+          </div>
+        </Link>
+      </div>
+    </section>
   );
 };
 

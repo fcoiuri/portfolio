@@ -1,0 +1,61 @@
+{
+  "navbar": {
+    "home": "Página Inicial",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "experience": "Experiência",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, meu nome é Iuri Mendes",
+    "title_line1": "EU CRIO PARA",
+    "title_line2": "CRESCIMENTO.",
+    "description": "Sou um Desenvolvedor Front-end Pleno com 4+ anos de experiência, especializado em React, React Native e Tailwind CSS. Crio aplicações fluidas e modernas.",
+    "btn_projects": "Ver Projetos",
+    "badge_available_desktop": "Disponível para projetos",
+    "badge_available_mobile": "Disponível",
+    "dev_badge": "Iuri"
+  },
+  "projects": {
+    "highlight_badge": "⭐ Projeto Destaque",
+    "title": "Meu Niver Online",
+    "description": "Micro SaaS completo para criação de páginas personalizadas de aniversário. Sistema de pagamentos integrado, editor interativo e templates customizáveis.",
+    "btn_view": "Ver projeto",
+    "badge_production": "Em Produção"
+  },
+  "skills": {
+    "title_small": "O que eu domino",
+    "title_large": "Ecossistema Frontend & Fullstack",
+    "subtitle": "Tecnologias que domino"
+  },
+  "experience": {
+    "title_small": "Minha Jornada",
+    "title_large": "Experiência Profissional",
+    "present": "Presente",
+    "role_fullstack": "Desenvolvedor Full Stack",
+    "role_frontend": "Desenvolvedor Front-end",
+    "role_frontend_pleno": "Desenvolvedor Front-end Pleno",
+    "role_sustain": "Sustentação de Sistemas",
+    "role_scholar": "Bolsista Full Stack",
+
+    "sonae_desc": "Desenvolvimento do app e backoffice de plataforma de carregamento de veículos elétricos. Foco em performance, qualidade de código e arquitetura.",
+    "maxia_desc": "Desenvolvimento de aplicações responsivas e criação de jogo educacional com Phaser para criação de mapas interativos.",
+    "techdes_desc": "Desenvolvimento de aplicações responsivas e sistemas escaláveis. Internacionalização com i18n e deploys usando Jenkins.",
+    "fitbank_desc": "Implementação de micro front-ends integrando aplicações React a um monólito Ruby on Rails. Automação de deploys CI/CD.",
+    "trt_desc": "Implementação de melhorias nos sistemas, detecção/correção de bugs e manutenção de bancos de dados.",
+    "pibiti_desc": "Criação de interfaces web interativas com API do Google Maps para localizar microcontroladores em tempo real."
+  },
+  "contact": {
+    "title": "Vamos trabalhar juntos!",
+    "subtitle": "Aberto a oportunidades ou apenas para bater um papo.",
+    "name_placeholder": "Nome",
+    "phone_placeholder": "Telefone",
+    "email_placeholder": "Email",
+    "message_placeholder": "Sua mensagem",
+    "btn_send": "Enviar Mensagem",
+    "btn_sending": "Enviando...",
+    "footer_scroll": "Voltar ao topo",
+    "success_msg": "Mensagem enviada com sucesso!",
+    "error_msg": "Ocorreu um erro ao enviar a mensagem."
+  }
+}

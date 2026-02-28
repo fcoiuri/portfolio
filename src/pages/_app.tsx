@@ -4,6 +4,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import React from 'react';
 import Navbar from '@/components/Navbar';
+import '@/i18n';
 
 export default function App({ Component, pageProps }: AppProps) {
   React.useEffect(() => {

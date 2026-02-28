@@ -42,6 +42,16 @@
     "role_sustain": "Soporte de Sistemas",
     "role_scholar": "Becario Full Stack",
 
+    "date_sonae": "May 2025",
+    "date_maxia": "Dic 2023 - May 2025",
+    "date_techdes": "Jul 2023 - Dic 2023",
+    "date_fitbank": "Ene 2022 - Jul 2023",
+    "date_trt": "Mar 2020 - Ene 2022",
+    "date_pibiti": "Ago 2019 - Ago 2021",
+    "label_app": "App",
+    "label_web": "Web",
+    "label_stack": "Stack",
+
     "sonae_desc": "Desarrollo de la app y panel administrativo para una plataforma de carga de vehículos eléctricos. Foco en rendimiento, calidad y arquitectura.",
     "maxia_desc": "Desarrollo de aplicaciones responsivas y creación de juego educativo usando Phaser para mapas interactivos.",
     "techdes_desc": "Desarrollo de aplicaciones y sistemas escalables. Internacionalización con i18n y despliegues usando Jenkins.",

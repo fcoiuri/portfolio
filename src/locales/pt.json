@@ -42,6 +42,16 @@
     "role_sustain": "Sustentação de Sistemas",
     "role_scholar": "Bolsista Full Stack",
 
+    "date_sonae": "Mai 2025",
+    "date_maxia": "Dez 2023 - Mai 2025",
+    "date_techdes": "Jul 2023 - Dez 2023",
+    "date_fitbank": "Jan 2022 - Jul 2023",
+    "date_trt": "Mar 2020 - Jan 2022",
+    "date_pibiti": "Ago 2019 - Ago 2021",
+    "label_app": "App",
+    "label_web": "Web",
+    "label_stack": "Stack",
+
     "sonae_desc": "Desenvolvimento do app e backoffice de plataforma de carregamento de veículos elétricos. Foco em performance, qualidade de código e arquitetura.",
     "maxia_desc": "Desenvolvimento de aplicações responsivas e criação de jogo educacional com Phaser para criação de mapas interativos.",
     "techdes_desc": "Desenvolvimento de aplicações responsivas e sistemas escaláveis. Internacionalização com i18n e deploys usando Jenkins.",

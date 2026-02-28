@@ -32,7 +32,7 @@ const Experience = () => {
               <div className="w-full md:w-5/12 pl-16 md:pl-0">
                 <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
                   <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
-                    Mai 2024 - {t('experience.present')}
+                    {t('experience.date_sonae')} - {t('experience.present')}
                   </div>
                   <h3 className="text-2xl font-extrabold text-brand-black mb-1">
                     {t('experience.role_frontend_pleno')}
@@ -42,8 +42,8 @@ const Experience = () => {
                     {t('experience.sonae_desc')}
                   </p>
                   <p className="text-sm">
-                    <span className="font-bold">App:</span> React Native, Expo, Zustand.<br />
-                    <span className="font-bold">Web:</span> React 19, Tailwind CSS 4, Radix UI.
+                    <span className="font-bold">{t('experience.label_app')}:</span> React Native, Expo, Zustand.<br />
+                    <span className="font-bold">{t('experience.label_web')}:</span> React 19, Tailwind CSS 4, Radix UI.
                   </p>
                 </div>
               </div>
@@ -58,7 +58,7 @@ const Experience = () => {
               <div className="w-full md:w-5/12 pl-16 md:pl-0">
                 <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
                   <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
-                    Dez 2023 - Mai 2025
+                    {t('experience.date_maxia')}
                   </div>
                   <h3 className="text-2xl font-extrabold text-brand-black mb-1">
                     {t('experience.role_frontend_pleno')}
@@ -68,7 +68,7 @@ const Experience = () => {
                     {t('experience.maxia_desc')}
                   </p>
                   <p className="text-sm">
-                    <span className="font-bold">Stack:</span> Next.js, TypeScript, React Query, Cypress, Tailwind CSS.
+                    <span className="font-bold">{t('experience.label_stack')}:</span> Next.js, TypeScript, React Query, Cypress, Tailwind CSS.
                   </p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ const Experience = () => {
               <div className="w-full md:w-5/12 pl-16 md:pl-0">
                 <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
                   <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
-                    Jul 2023 - Dez 2023
+                    {t('experience.date_techdes')}
                   </div>
                   <h3 className="text-2xl font-extrabold text-brand-black mb-1">
                     {t('experience.role_fullstack')}
@@ -93,7 +93,7 @@ const Experience = () => {
                     {t('experience.techdes_desc')}
                   </p>
                   <p className="text-sm">
-                    <span className="font-bold">Stack:</span> React, Next.js, ASP.NET Core, Vue.js, PostgreSQL.
+                    <span className="font-bold">{t('experience.label_stack')}:</span> React, Next.js, ASP.NET Core, Vue.js, PostgreSQL.
                   </p>
                 </div>
               </div>
@@ -108,7 +108,7 @@ const Experience = () => {
               <div className="w-full md:w-5/12 pl-16 md:pl-0">
                 <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
                   <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
-                    Jan 2022 - Jul 2023
+                    {t('experience.date_fitbank')}
                   </div>
                   <h3 className="text-2xl font-extrabold text-brand-black mb-1">
                     {t('experience.role_frontend')}
@@ -118,7 +118,7 @@ const Experience = () => {
                     {t('experience.fitbank_desc')}
                   </p>
                   <p className="text-sm">
-                    <span className="font-bold">Stack:</span> React, Redux, Material-UI, Prisma, TypeScript.
+                    <span className="font-bold">{t('experience.label_stack')}:</span> React, Redux, Material-UI, Prisma, TypeScript.
                   </p>
                 </div>
               </div>
@@ -133,7 +133,7 @@ const Experience = () => {
               <div className="w-full md:w-5/12 pl-16 md:pl-0">
                 <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
                   <div className="inline-block bg-brand-cyan neo-badge px-3 py-1 text-sm font-bold mb-4">
-                    Mar 2020 - Jan 2022
+                    {t('experience.date_trt')}
                   </div>
                   <h3 className="text-2xl font-extrabold text-brand-black mb-1">
                     {t('experience.role_sustain')}
@@ -143,7 +143,7 @@ const Experience = () => {
                     {t('experience.trt_desc')}
                   </p>
                   <p className="text-sm">
-                    <span className="font-bold">Stack:</span> React, JavaScript, HTML, CSS, SQL.
+                    <span className="font-bold">{t('experience.label_stack')}:</span> React, JavaScript, HTML, CSS, SQL.
                   </p>
                 </div>
               </div>
@@ -158,7 +158,7 @@ const Experience = () => {
               <div className="w-full md:w-5/12 pl-16 md:pl-0">
                 <div className="neo-box bg-brand-white p-6 md:p-8 hover:-translate-y-2 hover:shadow-[12px_12px_0_#1A1A1A] transition-all duration-300">
                   <div className="inline-block bg-brand-yellow neo-badge px-3 py-1 text-sm font-bold mb-4">
-                    Ago 2019 - Ago 2021
+                    {t('experience.date_pibiti')}
                   </div>
                   <h3 className="text-2xl font-extrabold text-brand-black mb-1">
                     {t('experience.role_scholar')}
@@ -168,7 +168,7 @@ const Experience = () => {
                     {t('experience.pibiti_desc')}
                   </p>
                   <p className="text-sm">
-                    <span className="font-bold">Stack:</span> React, Node.js, Firebase, JavaScript.
+                    <span className="font-bold">{t('experience.label_stack')}:</span> React, Node.js, Firebase, JavaScript.
                   </p>
                 </div>
               </div>

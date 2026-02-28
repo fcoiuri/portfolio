@@ -42,6 +42,16 @@
     "role_sustain": "Systems Support",
     "role_scholar": "Full Stack Scholar",
 
+    "date_sonae": "May 2025",
+    "date_maxia": "Dec 2023 - May 2025",
+    "date_techdes": "Jul 2023 - Dec 2023",
+    "date_fitbank": "Jan 2022 - Jul 2023",
+    "date_trt": "Mar 2020 - Jan 2022",
+    "date_pibiti": "Aug 2019 - Aug 2021",
+    "label_app": "App",
+    "label_web": "Web",
+    "label_stack": "Stack",
+
     "sonae_desc": "Development of the app and backoffice for an electric vehicle charging platform. Focus on performance, code quality, and architecture.",
     "maxia_desc": "Development of responsive applications and an educational game using Phaser to create interactive maps.",
     "techdes_desc": "Development of responsive applications and scalable systems. Internationalization with i18n and deployments using Jenkins.",
